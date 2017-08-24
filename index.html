@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS Plunker</title>
+  <script>
+    document.write('<base href="' + document.location + '" />');
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <script data-require="angular.js@1.5.x" src="https://code.angularjs.org/1.5.8/angular.js" data-semver="1.5.8"></script>
+  <script src="app.js"></script>
+</head>
+
+<div ng-controller="MainCtrl">
+  <table>
+    <thead>
+      <th>Name</th>
+      <th>duedate</th>
+      <th>DocketNumber</th>
+      <th>Color</th>
+    </thead>
+    <tbody>
+   <tr ng-repeat="emp in employees">
+        <td>{{emp.name}}</td>
+        <td>{{emp.duedate}}</td>
+        <td>{{emp.DocketNumber}}</td>
+        <td>{{emp.Color}}</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
+</html>
